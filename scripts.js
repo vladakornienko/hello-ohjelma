@@ -1,6 +1,6 @@
 function setTime() {
   const now = new Date();
-  
+
   const time = now.toLocaleTimeString('fi-FI');
 
   const dateOptions = {
@@ -15,3 +15,7 @@ function setTime() {
 
   document.getElementById("datetime").innerHTML = datetime;
 }
+
+setInterval(setTime, 1000);
+
+setTime();
